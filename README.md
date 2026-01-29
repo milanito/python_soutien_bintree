@@ -20,6 +20,40 @@ For breadth-first traversal, you must use the `Queue` class:
 
 ---
 
+At the top of your file you should write
+
+```
+from bintree import BinTree
+from queue import Queue
+```
+
+Creating a bintree
+
+```
+      10
+     /  \
+    5   15
+```
+
+```
+t = BinTree(10,
+            BinTree(5),
+            BinTree(15))
+```
+
+Even deeper
+
+```
+t = BinTree(10,
+            BinTree(5, BinTree(3), BinTree(7)),
+            BinTree(15))
+```
+
+
+
+
+---
+
 ## Exercise 1: Count nodes
 
 Write a function `size(B)` that returns the number of nodes in the binary tree `B`.
